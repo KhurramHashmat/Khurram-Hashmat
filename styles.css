@@ -1,0 +1,266 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Left Panel */
+.left-panel {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  border-right: 2px solid #e0e0e0;
+}
+
+.profile-photo {
+  width: 200px; /* Increase size as needed */
+  height: 200px; /* Keep height equal to width for a square */
+  border-radius: 0; /* Remove the circle effect */
+  object-fit: cover; /* Ensure the image fills the square */
+  margin-bottom: 10px;
+}
+
+.left-panel h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.left-panel h2, .left-panel h3 {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.left-panel a {
+  display: block;
+  color: #007bff;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.social-links {
+  display: flex; /* Arrange items in a row */
+  justify-content: center; /* Center the icons horizontally */
+  gap: 10px; /* Spacing between the icons */
+  margin-top: 10px; /* Adds some space above the icons */
+}
+
+.social-links img {
+  width: 40px; /* Icon size */
+  height: 40px;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.social-links img:hover {
+  transform: scale(1.2); /* Slight zoom effect when hovered */
+}
+
+
+/* Right Panel */
+.right-panel {
+  width: 70%;
+  padding: 20px;
+}
+
+.right-panel h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.right-panel p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Projects Section */
+.projects-section {
+  text-align: center; /* Centers the heading */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.projects-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Adds space below heading */
+}
+
+/* Grid for Project Cards */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to the next line */
+  justify-content: space-between; /* Distributes space between cards */
+  gap: 10px; /* Reduced space between project cards */
+}
+
+/* Individual Project Card */
+.project-card {
+  width: calc(33.33% - 20px); /* Adjusted for the new gap */
+  text-align: center;
+  margin-bottom: 20px; /* Adds space between rows */
+}
+
+.project-card img {
+  width: 100%; /* Makes images responsive */
+  max-width: 200px; /* Limits image width */
+  height: auto; /* Maintains aspect ratio */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.1);
+}
+
+.project-card p {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none; /* Removes default underline */
+  transition: text-decoration 0.3s ease; /* Smooth transition for underline */
+}
+
+.project-card a {
+  text-decoration: none; /* Removes default underline */
+  color: inherit; /* Ensures the link inherits the text color */
+}
+
+.project-card a:hover p {
+  text-decoration: underline; /* Underlines the text on hover */
+}
+
+
+/* Future Goals Section */
+.future-goals {
+  background-color: #fff; /* Set background to white */
+  padding: 40px 0; /* Vertical padding */
+}
+
+.future-goals .container {
+  display: flex;
+  justify-content: space-between; /* Creates space between heading and content */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.goals-heading {
+  width: 30%; /* Adjust the width for the heading */
+  display: flex;
+  align-items: center; /* Center heading vertically */
+  justify-content: center; /* Center heading horizontally */
+}
+
+.goals-heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #05080c; /* Primary color for the heading */
+  margin-left: 10px; /* Adjust left margin */
+}
+
+.goals-content {
+  width: 65%; /* Set content width */
+  padding-left: 20px;
+  border-left: 2px solid #e0e0e0; /* Add vertical line */
+}
+
+.goals-content p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 20px 0;
+  background-color: #eaeaea; /* Light gray background */
+  border-top: 1px solid #ddd; /* Subtle top border */
+}
+
+.contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex; /* Use flexbox to align heading and content side by side */
+  justify-content: space-between; /* Space between heading and content */
+  align-items: center; /* Center vertically */
+}
+
+/* Left Heading */
+.contact-heading h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove default margin */
+}
+
+/* Right Content */
+.contact-content {
+  text-align: 'center'; /* Align content to the right */
+}
+
+.contact-content p {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.contact-content p a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #007BFF; /* Primary blue for email link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-content p a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social Links */
+.contact-social p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.social-links1 {
+  display: flex;
+  justify-content: center; /* Align links to the right */
+  gap: 15px; /* Space between icons */
+}
+
+.social-links1 img {
+  width: 40px; /* Icon size */
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-links1 img:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
+}
+
+
+
