@@ -133,36 +133,116 @@ a:hover {
   font-weight: bold;
 }
 
-/* Contact Section */
-.contact {
-  padding: 20px;
-  text-align: center;
-  background-color: #f9f9f9;
+/* Future Goals Section */
+.future-goals {
+  background-color: #fff; /* Set background to white */
+  padding: 40px 0; /* Vertical padding */
 }
 
-.contact-heading h2 {
+.future-goals .container {
+  display: flex;
+  justify-content: space-between; /* Creates space between heading and content */
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.goals-heading {
+  width: 30%; /* Adjust the width for the heading */
+  display: flex;
+  align-items: center; /* Center heading vertically */
+  justify-content: center; /* Center heading horizontally */
+}
+
+.goals-heading h2 {
   font-size: 2rem;
-  margin-bottom: 10px;
+  font-weight: bold;
+  color: #05080c; /* Primary color for the heading */
+  margin-left: 10px; /* Adjust left margin */
+}
+
+.goals-content {
+  width: 65%; /* Set content width */
+  padding-left: 20px;
+  border-left: 2px solid #e0e0e0; /* Add vertical line */
+}
+
+.goals-content p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+/* Contact Section Styles */
+.contact {
+  padding: 20px 0;
+  background-color: #eaeaea; /* Light gray background */
+  border-top: 1px solid #ddd; /* Subtle top border */
+}
+
+.contact .container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex; /* Use flexbox to align heading and content side by side */
+  justify-content: space-between; /* Space between heading and content */
+  align-items: center; /* Center vertically */
+}
+
+/* Left Heading */
+.contact-heading h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: left; /* Align text to the left */
+  margin: 0; /* Remove default margin */
+}
+
+/* Right Content */
+.contact-content {
+  text-align: 'center'; /* Align content to the right */
 }
 
 .contact-content p {
+  font-size: 18px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.contact-content p a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #007BFF; /* Primary blue for email link */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact-content p a:hover {
+  color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social Links */
+.contact-social p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-.contact-social {
+.social-links1 {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  justify-content: center; /* Align links to the right */
+  gap: 15px; /* Space between icons */
 }
 
-.contact-social img {
-  width: 30px;
-  height: 30px;
+.social-links1 img {
+  width: 40px; /* Icon size */
+  height: 40px;
   transition: transform 0.3s ease;
 }
 
-.contact-social img:hover {
-  transform: scale(1.2);
+.social-links1 img:hover {
+  transform: scale(1.2); /* Zoom effect on hover */
 }
 
 /* Responsive Styles for Smaller Screens */
