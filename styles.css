@@ -111,7 +111,7 @@ a:hover {
 
 .project-card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #ddd; 
   border-radius: 8px;
   padding: 10px;
   transition: transform 0.3s ease;
@@ -135,50 +135,36 @@ a:hover {
 
 /* Future Goals Section */
 .future-goals {
-  background-color: #fff; /* Set background to white */
-  padding: 40px 0; /* Vertical padding */
+  background-color: #fff; /* Match the container background */
 }
 
 .future-goals .container {
   display: flex;
-  justify-content: space-between; /* Creates space between heading and content */
+  justify-content: space-between;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.goals-heading {
-  width: 30%; /* Adjust the width for the heading */
-  display: flex;
-  align-items: center; /* Center heading vertically */
-  justify-content: center; /* Center heading horizontally */
+.future-goals .left-panel {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  border-right: 2px solid #e0e0e0;
 }
 
-.goals-heading h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #05080c; /* Primary color for the heading */
-  margin-left: 10px; /* Adjust left margin */
-}
-
-.goals-content {
-  width: 65%; /* Set content width */
-  padding-left: 20px;
-  border-left: 2px solid #e0e0e0; /* Add vertical line */
-}
-
-.goals-content p {
-  line-height: 1.8;
-  margin-bottom: 15px;
-  font-size: 1.1rem;
-  text-align: justify;
+.future-goals .right-panel {
+  width: 70%;
+  padding: 20px;
 }
 
 /* Contact Section Styles */
 .contact {
   padding: 20px 0;
   background-color: #eaeaea; /* Light gray background */
-  border-top: 1px solid #ddd; /* Subtle top border */
+  border-top: 1px solid #ddd;  /* Subtle top border */
 }
 
 .contact .container {
@@ -199,7 +185,7 @@ a:hover {
 
 /* Right Content */
 .contact-content {
-  text-align: 'center'; /* Align content to the right */
+  text-align: 'center'; /* Align content to the center */
 }
 
 .contact-content p {
@@ -314,10 +300,20 @@ a:hover {
   }
 }
 
-/* Responsive Styles for Future Goals Section */
 @media screen and (max-width: 768px) {
   .future-goals .container {
-    flex-direction: column; /* Stack heading and content vertically */
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .future-goals .left-panel {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #e0e0e0;
+  }
+
+  .future-goals .right-panel {
+    width: 100%;
     padding: 10px;
   }
 }
