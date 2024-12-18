@@ -314,6 +314,14 @@ a:hover {
   }
 }
 
+/* Responsive Styles for Future Goals Section */
+@media screen and (max-width: 768px) {
+  .future-goals .container {
+    flex-direction: column; /* Stack heading and content vertically */
+    padding: 10px;
+  }
+}
+
 
 
 
