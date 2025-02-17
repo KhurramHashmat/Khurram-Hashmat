@@ -1,4 +1,4 @@
-/* General Reset */
+/* Page Styles */
 * {
   margin: 0;
   padding: 0;
@@ -135,7 +135,7 @@ a:hover {
 
 /* Future Goals Section */
 .future-goals {
-  background-color: #fff; /* Match the container background */
+  background-color: #fff; 
 }
 
 .future-goals .container {
@@ -163,29 +163,29 @@ a:hover {
 /* Contact Section Styles */
 .contact {
   padding: 20px 0;
-  background-color: #eaeaea; /* Light gray background */
-  border-top: 1px solid #ddd;  /* Subtle top border */
+  background-color: #eaeaea; 
+  border-top: 1px solid #ddd;  
 }
 
 .contact .container {
   max-width: 800px;
   margin: 0 auto;
-  display: flex; /* Use flexbox to align heading and content side by side */
-  justify-content: space-between; /* Space between heading and content */
-  align-items: center; /* Center vertically */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 }
 
-/* Left Heading */
+
 .contact-heading h2 {
   font-size: 28px;
   color: #333;
-  text-align: left; /* Align text to the left */
-  margin: 0; /* Remove default margin */
+  text-align: left; 
+  margin: 0; 
 }
 
-/* Right Content */
+
 .contact-content {
-  text-align: 'center'; /* Align content to the center */
+  text-align: 'center'; 
 }
 
 .contact-content p {
@@ -197,13 +197,13 @@ a:hover {
 .contact-content p a {
   text-decoration: none;
   font-size: 18px;
-  color: #007BFF; /* Primary blue for email link */
+  color: #007BFF; 
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .contact-content p a:hover {
-  color: #0056b3; /* Darker blue on hover */
+  color: #0056b3; 
 }
 
 /* Social Links */
@@ -217,24 +217,24 @@ a:hover {
 
 .social-links1 {
   display: flex;
-  justify-content: center; /* Align links to the right */
-  gap: 15px; /* Space between icons */
+  justify-content: center; 
+  gap: 15px; 
 }
 
 .social-links1 img {
-  width: 40px; /* Icon size */
+  width: 40px; 
   height: 40px;
   transition: transform 0.3s ease;
 }
 
 .social-links1 img:hover {
-  transform: scale(1.2); /* Zoom effect on hover */
+  transform: scale(1.2); 
 }
 
-/* Responsive Styles for Smaller Screens */
+
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack panels vertically */
+    flex-direction: column; 
     padding: 10px;
   }
 
@@ -250,7 +250,7 @@ a:hover {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr; /* Single column for projects */
+    grid-template-columns: 1fr; 
   }
 
   .profile-photo {
